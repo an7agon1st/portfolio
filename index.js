@@ -1,7 +1,6 @@
 import * as THREE from './node_modules/three/src/Three.js';
 import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
-
 const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
 
@@ -41,13 +40,13 @@ var salazar = new GLTFLoader();
 salazar.load('./model/salazar/scene.gltf', function (gltf) {
     model = gltf.scene;
     model.position.y = 0.8;
-    console.log(model);
+    // console.log(model);
     model.scale.set(1.5,1.5,1.5);
     scene.add(gltf.scene);
 }, undefined, function (error) {
     console.error(error);
 });
-console.log(salazar);
+// console.log(salazar);
 
 // renderer
 var renderer = new THREE.WebGLRenderer({ antialias: true });
