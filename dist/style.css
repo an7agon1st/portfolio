@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+canvas {
+    z-index: 1;
+}
+
+.model-3d canvas {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: aliceblue;
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 0em;
+    border-radius: 30px;
+    padding: 20;
+    position: absolute;
+    transition: all 500ms ease-in;
+    width: 30%;
+    height: 1%;
+    z-index: 100;
+}
+
+.intro:hover {
+    height: auto;
+    font-size: 2.5em;
+}
